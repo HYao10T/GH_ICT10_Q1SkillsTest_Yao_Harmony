@@ -1,0 +1,318 @@
+.topnav {
+  position: sticky;
+  top: 0;     
+  width: 100%;      
+  z-index: 1000;      
+}
+
+/* NAVBAR LINKS */
+.topnav a {
+  color: beige;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+}
+
+/* hover */
+.topnav a:hover {
+  background-color: beige;
+  color: #5a4939;
+}
+
+.topnav a.active {
+  background-color: #759dca;
+  color: beige;
+}
+
+/* NAVBAR LIST */
+.topnav ul {
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+  background-color: #bb352b;
+  margin: 0;  
+  padding: 0;     
+}
+
+/* HOME PAGE */
+    body {
+    background-color: #987554;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #5a4939;
+    }
+
+    #shop{
+        text-align: center;
+        width: 450px;
+        margin: auto;
+        color: beige;
+        margin-bottom: 10px;
+    }
+
+    #shop img{
+        width: 150px;
+        text-align: center;
+
+    }
+
+    h2{
+        font-family: monospace;
+    }
+
+    h1{
+        font-family: monospace;
+    }
+
+    #menu #menu-table{
+        background-color: #e9ecbe;
+        width: 60%;
+        padding: 10px;
+        margin: 0 auto; 
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    #allergens{
+        background-color: #bb352b;
+        width: 60%;
+        margin: 0 auto; 
+        text-align: center;
+        font-style: italic;
+        color: #e9ecbe;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: small;
+    }--
+
+    #hours {
+        background-color: #759dca;
+        color: #f5f5dc;
+        width: 30%;
+        margin: 0 auto; 
+        text-align: center;
+        margin-top: 30px;
+        border-radius: 30px;
+    }
+
+    #bye{
+        width: 400px;
+        margin: auto;
+    }
+
+    #tax{
+        font-size: small;
+        font-style: italic;
+    }
+    
+    #details{
+        color: #759dca;
+        font-display: underline;
+    }
+
+    #name{
+        font-size: 30px
+    }
+
+    #bye{
+        margin: 0 auto;
+        width: 250px;
+        margin-top: 20px
+    }
+      #bye img{
+        width: 250px;
+        margin: 0 auto;
+    }
+
+
+    
+/* ORDER PAGE */
+.order-info {
+    color: #5a4939;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.order-info h1 {
+    color: beige;
+}
+
+#chef {
+    margin-left: -650px;
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    rotate: -20deg;
+}
+
+.order-info form {
+    width: 100%;
+    background-color: #bb352b;
+    box-shadow: 0 4px 8px 0 #5a4939;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* === NEW FLEX WRAPPER FOR SIDE-BY-SIDE === */
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 20px auto;
+    flex-wrap: wrap; /* allows stacking on small screens */
+}
+
+/* INFO SECTION */
+.information {
+    flex: 1;
+    max-width: 35%;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* MENU SECTION */
+.card-order {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-menu {
+    background-color: #5a4939;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    color: beige;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card-menu:hover {
+    box-shadow: 0 8px 16px 0 #5a4939;
+    width: 350px;
+    height: 230px; 
+    transition: 0.3s; 
+}
+
+.card-menu img {
+    width: 150px;
+    border-radius: 100%;
+    border: beige solid 2px;
+}
+
+/* FORM INPUTS */
+.order-info form input {
+    border-radius: 20px;
+    border: none;
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+/* SUMMARY */
+#output {
+    background-color: #5a4939;
+    color: beige;
+    width: 60%;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 #5a4939;
+    text-align: center;
+    padding: 20px;
+}
+
+#output:hover{
+    color: #759dca;
+}
+
+
+/* SUBMIT BUTTON */
+#total {
+    color: beige;
+    background-color: #5a4939;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#total:hover {
+    background-color: #759dca;
+    color: beige;
+    box-shadow: 0 4px 8px 0 #5a4939;
+}
+
+#refresh {
+    color: beige;
+    background-color: #5a4939;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#refresh:hover {
+    background-color: #759dca;
+    color: beige;
+    box-shadow: 0 4px 8px 0 #5a4939;
+}
+
+.card-menu:hover{
+    background-color: #987554;
+}
+
+#output h2{
+    font-weight: bold;
+    color: beige;
+}
+
+/* CONTACT PAGE */
+
+#contact{
+    display: flex;    
+    flex-wrap: wrap;             
+    justify-content: center;   
+    gap: 20px;        
+    margin-top: 20px;          
+}
+
+.card-contact {
+  box-shadow: 0 4px 8px 0 #5a4939;
+  background-color: #e9ecbe;
+  padding: 10px;
+  width: 20%;
+  align-content: center;
+  color:#5a4939;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.card-contact:hover {
+  box-shadow: 0 8px 16px 0 #5a4939;
+}
+
+
+
+hr {
+    border: #5a4939 1px solid   ;
+    width: 100%;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q1: FINAL PROJECT | ORDER PAGE</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="topnav" id="navbar">
+        <ul>
+            <li><a class="active" href="order.html">Order Now</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="home.html">Home</a></li>
+        </ul>
+    </div>
+
+    <!-- ORDER FORM -->
+    <div class="order-info">
+        <h1 id="oinfo">Order Form</h1>
+        <div class="chef"><img src="chef.png" alt="chef" id="chef"></div>
+
+        <form>
+            <!-- FIELDSET -->
+            <fieldset style="border: 20px solid #bb352b; border-radius: 20px; background-color: beige">
+
+                <div class="container-info">
+
+                <h3>Contact Information</h3>
+                <p>Please fill in the ordering form 🍓</p>
+                <hr>
+                <br>
+                <!-- FIRST NAME -->
+                <label for="fname">First Name</label><br />
+                <input type="text" id="fname" placeholder="Enter your first name" class="form-control"><br><br>
+
+                <!-- LAST NAME -->
+                <label for="lname">Last Name</label><br />
+                <input type="text" id="lname" placeholder="Enter your last name" class="form-control"><br><br>
+
+                <!-- CONTACT -->
+                <label>Address</label><br />
+                <input type="text" id="addr" placeholder="Enter your full address" class="form-control"><br><br>
+
+                <label>Contact No.</label><br />
+                <input type="number" id="contact-num" placeholder="Contact number" class="form-control"><br><br>
+                </div>
+
+                <hr>
+                <br />
+                <h3>Menu</h3>
+                <p>please select your order and enter the quanity 🍰</p>
+                <div class="card-order">
+
+                <!-- JAM PARFAIT -->
+                <div class="card-menu" id="card1">
+                    <img src="jam.jpg" alt="jam"><br />
+                    <label>Strawberry jam parfait <b>₱180.00</b></label>
+                    <br /><input type="checkbox" id="jam"><br>
+                    <input type="number" id="jam_qty"  placeholder="enter quantity amount" min="1" max="50"><br />
+                </div><br><br>
+               
+                <!-- BERRY YOGURT -->
+                 <div class="card-menu" id="card2">
+                    <img src="yogurt.jpg" alt="yogurt"><br />
+                    <label>Mixed berry yogurt <b>₱170.00</b></label>
+                    <br /><input type="checkbox" id="yogurt">
+                    <input type="number" id="yogurt_qty" placeholder="enter quantity amount" min="1" max="50">
+                </div><br><br>
+                
+                <!-- SHORTCAKE -->
+                 <div class="card-menu" id="card3">
+                    <img src="shortcake.jpg" alt="shortcake"><br />
+                    <label>Strawberry shortcake <b>₱150.00</b></label>
+                    <br /><input type="checkbox" id="shortcake">
+                    <input type="number" id="shortcake_qty"  placeholder="enter quantity amount"min="1" max="50">
+                </div><br><br>
+                
+                <!-- FLAN -->
+                 <div class="card-menu" id="card4">
+                    <img src="flan.webp" alt="flan"><br />
+                    <label>Strawberry flan <b>₱130.00</b></label>
+                    <br /><input type="checkbox" id="flan">
+                    <input type="number" id="flan_qty" placeholder="enter quantity amount" min="1" max="50">
+                </div><br><br>
+                
+                <!-- ICE CREAM BARS -->
+                <div class="card-menu" id="card5">
+                    <img src="bars.jpg" alt="bars"><br />
+                    <label>Strawberry ice-cream bars <b>₱135.00</b></label>
+                    <br /><input type="checkbox" id="bars">
+                    <input type="number" id="bars_qty" placeholder="enter quantity amount" min="1" max="50"></div><br><br>
+                
+                <!-- CREAM CHEESE CUPCAKES -->
+                <div class="card-menu" id="card6">
+                    <img src="cupcake.jpg" alt="cupcake"><br />
+                    <label>Strawberry cream cheese cupcakes <b>₱120.00</b></label>
+                    <br /><input type="checkbox" id="cupcake">
+                    <input type="number" id="cupcake_qty" placeholder="enter quantity amount"min="1" max="50">
+                </div><br><br>
+
+                <!-- CREAM SANDO -->
+                <div class="card-menu" id="card7">
+                    <img src="sando.jpg" alt="sando"><br />
+                     <label>Strawberry cream sando <b>₱135.00</b></label>
+                     <br><input type="checkbox" id="sando">
+                   <input type="number" id="sando_qty" placeholder="enter quantity amount" min="1" max="50">
+                </div><br /><br />
+            </div>
+
+            <hr>
+            <br>
+                <!-- SUBMIT -->
+                <button type="button" id="total" py-click="order_summary">Submit</button>
+                <button type="button" id="refresh" onclick="window.location.reload()">Refresh</button><br /><br />
+                </div><br /><br />
+                </div>
+
+        
+                <div id="output">
+                    <h2>Order Summary</h2>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="bye"><img src="sbye.png" alt="bye"></div>
+    <!-- PY-SCRIPT -->
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
